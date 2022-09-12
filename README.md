@@ -2,9 +2,23 @@ df['Engine Cylinders'].median()
 
 
 a = df[df.Make == 'Lotus']
+
+
+
 a[['Engine HP', 'Engine Cylinders']].drop_duplicates()
+
+
+
+
 x = a[['Engine HP', 'Engine Cylinders']].drop_duplicates().values
+
+
+
+
 xt = x.T
+
+
+
 def question7(x,xt):
     assert x.shape[1]== xt.shape[0]
     n = x.shape[0]
